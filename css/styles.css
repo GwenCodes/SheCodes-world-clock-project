@@ -12,6 +12,7 @@ h2 {
 }
 footer {
   text-align: center;
+  font-size: 12px;
 }
 .container {
   max-width: 640px;
@@ -20,6 +21,11 @@ footer {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   border-radius: 5px;
+}
+.container-cities {
+  max-width: 600px;
+  background-color: blue;
+  box-shadow: rgba(105, 42, 42, 0.15) 0px 5px 15px 0px;
 }
 
 select {
@@ -33,7 +39,7 @@ select {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin: 24px 0;
+  margin: 15px 0;
   border-bottom: dashed grey;
   padding: 20px 0;
 }
