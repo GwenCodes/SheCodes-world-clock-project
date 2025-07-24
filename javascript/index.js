@@ -1,6 +1,5 @@
 function updateTime() {
   // Los Angeles
-
   let losAngelesElement = document.querySelector("#los-angeles");
   if (losAngelesElement) {
     let losAngelesDateElement = losAngelesElement.querySelector(".date");
@@ -21,6 +20,20 @@ function updateTime() {
 
     cebuDateElement.innerHTML = cebuTime.format("MMMM	Do YYYY");
     cebuTimeElement.innerHTML = cebuTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  // Cape Town
+  let capeTownElement = document.querySelector("#cape-town");
+  if (capeTownElement) {
+    let capeTownDateElement = capeTownElement.querySelector(".date");
+    let capeTownTimeElement = capeTownElement.querySelector(".time");
+    let capeTownTime = moment().tz("Africa/Johannesburg");
+
+    capeTownDateElement.innerHTML = capeTownTime.format("MMMM Do YYYY");
+    capeTownTimeElement.innerHTML = capeTownTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+      //capeTownTime needs to be declared so date and time value can be read for that location
+    );
   }
 }
 function updateCity(event) {
