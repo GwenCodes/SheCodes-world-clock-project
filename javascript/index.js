@@ -43,8 +43,10 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+   <a href="/">All cities</a>
   `;
   //code is to update the city name, date and time every time a new city is selected
+  //last code is a link to bring you back to home page.
 }
 
 updateTime();
