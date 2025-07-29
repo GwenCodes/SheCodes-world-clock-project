@@ -30,7 +30,6 @@ select {
   border: 2px solid rgb(39, 84, 138);
   border-radius: 4px;
   font-size: 15px;
-  transition: 1ms;
 }
 .city {
   display: flex;
